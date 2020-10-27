@@ -13,6 +13,7 @@ Prerequisite: Docker installed
     - init MongoDB with ./mongo/init-db.d/seed.js if the db has not been initiallized before
     - use nginx to reverse proxy the client port from 3000 to 80
     - run spring on port 8080 as a restful api server
+    -  **If you are using Windows, please follow this simple guide <link>https://stackoverflow.com/a/60814428</link> to avoid build failure in this step**
 
 2. Navigate to localhost:80 *(or simply localhost)* on your browser
 
