@@ -5,6 +5,8 @@ You may use docker-compose to start the containers.
 Prerequisite: Docker installed
 </pre>
 
+<ins>Steps to use the app:</ins>
+
 1. Run <code>docker-compose -f docker-compose.yaml up --build</code> on project base directory, it will
     - run the client (ReactJS), server (Spring), MongoDB, nginx on seperated containers
     - run MongoDB on port 27017 that stores the configuration settings for the server
