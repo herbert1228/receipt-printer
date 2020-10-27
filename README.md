@@ -8,15 +8,15 @@ Prerequisite:
 </pre>
 
 1. Run <code>docker-compose -f docker-compose.yaml up --build</code> on project base directory, it will
-    - run the client (ReactJS), server (Spring), MongoDB, nginx on seperate containers
-    - run MongoDB on port 27017 that stores configuration settings for the server
+    - run the client (ReactJS), server (Spring), MongoDB, nginx on seperated containers
+    - run MongoDB on port 27017 that stores the configuration settings for the server
     - init MongoDB with ./mongo/init-db.d/seed.js if the db has not been initiallized before
     - use nginx to reverse proxy the client port from 3000 to 80
     - run spring on port 8080 as a restful api server
 
-2. Navigate to localhost:80 on your browser
+2. Navigate to localhost:80 *(or simply localhost)* on your browser
 
-3. The client has use case 1 input by default. You may enter name, price, qty and click add button to add an item, or click 'X' to remove one. You may also change to location at the top (Please note that all fields are case sensitive)
+3. The client has Use Case 1 inputted by default. You may enter name, price, qty and click add button to add an item, or click 'X' to remove one. You may also change the location at the top *(Please note that all fields are case sensitive)*
 
 4. Click 'Generate Receipt' to view the receipt for the shopping cart
 
