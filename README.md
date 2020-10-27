@@ -2,9 +2,7 @@ This application is implemented with Java (Spring boot), MongoDB, ReactJs and Ng
 You may use docker-compose to start the containers.
 
 <pre>
-Prerequisite: 
-    1. Docker installed
-    2. modifly ./mongo/init-db.d/seed.js in order to change the default data in mongo db
+Prerequisite: Docker installed
 </pre>
 
 1. Run <code>docker-compose -f docker-compose.yaml up --build</code> on project base directory, it will
