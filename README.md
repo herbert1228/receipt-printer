@@ -9,6 +9,7 @@ Prerequisite:
 
 1. Run <code>docker-compose -f docker-compose.yaml up --build</code> on project base directory, it will
     - run the client (ReactJS), server (Spring), MongoDB, nginx on seperate containers
+    - run MongoDB on port 27017 that stores configuration settings for the server
     - init MongoDB with ./mongo/init-db.d/seed.js if the db has not been initiallized before
     - use nginx to reverse proxy the client port from 3000 to 80
     - run spring on port 8080 as a restful api server
