@@ -1,0 +1,5 @@
+mongo/data/*
+!mongo/data/README.txt
+
+# as k8s setup is not completed 
+deployment.yml 

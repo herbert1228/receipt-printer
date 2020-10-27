@@ -1,0 +1,181 @@
+body {
+  background-color: #282c34;
+}
+
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app > div {
+  width: 80%;
+  margin: 15px 0 15px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.377);
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location > div:first-child {
+  font-size: 30px;
+}
+
+.location > div:last-child {
+  width: 80%;
+}
+
+.items-container {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items-container > h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.items-container > .item-list {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.items-container > .item-list > div:nth-child(2) {
+  margin-top: 12px;
+}
+
+.items-container > .item-list > div:last-child {
+  margin-top: auto;
+}
+
+.item-list-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ffffff9e;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 20px 25px 20px;
+  background-color: rgba(255, 255, 255, 0.225);
+  border-radius: 6px;
+}
+
+.item.last > div:nth-child(2),
+.item.last > div:nth-child(3),
+.item.last > div:nth-child(4) {
+  line-height: 46px;
+}
+
+.input-custom {
+  text-align:center;
+  border: 0;
+}
+
+.input-custom:focus {
+  outline: none;
+}
+
+.btn {
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border-radius: 11px;
+  user-select: none;
+}
+
+.btn-generate {
+  border: 3px solid #b5b5b5c7;
+}
+
+.btn-generate:hover {
+  background-color: rgba(255, 255, 255, 0.258);
+}
+
+.item-list-btn {
+  background-color: rgba(255, 255, 255, 0.258);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.item-list-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.receipt {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.receipt > div:last-child {
+  margin: auto 0 25px 0;
+  line-height: 40px;
+}
+
+
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: 70%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+  font-size: x-large;
+  padding: 40px 60px 20px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-main > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.display-none {
+  display: none;
+}
+
+.btn-exit-modal {
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.btn-exit-modal:hover {
+  background-color: rgba(0, 0, 0, 0.288);
+}
+/* Modal end */
